@@ -48,7 +48,7 @@ export default class UserController {
   },
   'AIb6d35fvJM4O9pXqXQNla2jBCH9kuLz',
   {
-    expiresIn: '1h',
+    expiresIn: '7d',
   }
 );
 // 4. Send token.
