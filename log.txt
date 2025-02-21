@@ -151,3 +151,4 @@
  Tue Sep 12 2023 11:43:55 GMT+0530 (India Standard Time) - / - {"productID":"64f1878b63a35620665fa790","quantity":1}
  Tue Sep 12 2023 11:44:24 GMT+0530 (India Standard Time) - /api/cartItems - {"productID":"64f18dcd49d45aa9558bb73f","quantity":1}
  Tue Sep 12 2023 11:44:24 GMT+0530 (India Standard Time) - / - {"productID":"64f18dcd49d45aa9558bb73f","quantity":1}
+ Fri Feb 21 2025 13:56:08 GMT+0530 (India Standard Time) - /api/products/averagePrice - {}

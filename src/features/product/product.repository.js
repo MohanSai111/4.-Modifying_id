@@ -123,6 +123,30 @@ async rate(userID, productID, rating){
         throw new ApplicationError("Something went wrong with database", 500);    
     }
 }
+   async averageProductPricePerCategory(){
+    try{
+    const db= getDB();
+    return await db.collection(this.collection).
+       aggregate([
+        {
+            //stage 1: get average price per category
+            $group:{
+                _id:"$category",
+                averagePrice:{$avg:"$price"}
+            }
+        }
+       ]).toArray();
+    }catch(err){
+        console.log(err);
+        throw new ApplicationError("Something went wrong with database", 500);    
+    }
+   }
+
+
+
+
+
+
 }
 
 export default ProductRepository;
