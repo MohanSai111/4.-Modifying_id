@@ -172,3 +172,8 @@
  Fri Feb 21 2025 23:13:26 GMT+0530 (India Standard Time) - /api/orders - {}
  Sat Feb 22 2025 00:32:54 GMT+0530 (India Standard Time) - /api/orders - {}
  Sat Feb 22 2025 19:41:00 GMT+0530 (India Standard Time) - /api/users/signup - {"name":"Pvs Mohan","email":"pvsmohan810@gmail.com","password":"Password1"}
+ Sat Feb 22 2025 20:43:23 GMT+0530 (India Standard Time) - /api/users/resetPassword - {"newPassword":"password2"}
+ Sat Feb 22 2025 20:45:00 GMT+0530 (India Standard Time) - /api/users/resetPassword - {"newPassword":"password2"}
+ Sat Feb 22 2025 20:48:01 GMT+0530 (India Standard Time) - /api/users/resetPassword - {"newPassword":"password2"}
+ Sat Feb 22 2025 20:49:48 GMT+0530 (India Standard Time) - /api/users/resetPassword - {"newPassword":"password2"}
+ Sat Feb 22 2025 20:50:27 GMT+0530 (India Standard Time) - /api/users/resetPassword - {"newPassword":"password2"}

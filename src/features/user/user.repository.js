@@ -24,14 +24,30 @@ export default class UserRepository{
            throw new ApplicationError("Something went wrong with database", 500);
          }
          }
-         async findByEmail(email) {
+
+     async findByEmail(email) {
             try{
             return await UserModel.findOne({email});
           }catch(err){
             console.log(err);
             throw new ApplicationError("Something went wrong with database", 500);
           }
-          }     
+          }
+     async resetPassword(userID,newPassword){
+        try{
+            let user= await UserModel.findById(userID);
+            if(user){
+                user.password=newPassword;
+                await user.save();
+
+            }else{
+                throw new Error("User not Found")
+            }
+        }catch(err){
+            console.log(err);
+            throw new ApplicationError("Something went wrong with database", 500);
+          }
+     }  
    
 
 }
