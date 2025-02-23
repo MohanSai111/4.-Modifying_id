@@ -6,6 +6,12 @@ export const productSchema= mongoose.Schema(
         price: {type:Number},
         category: {type:String},
         description: {type:String},
-        inStock: Number
+        inStock: Number,
+        reviews:[
+            {
+                type:mongoose.Schema.Types.ObjectId,
+                ref:'Review'
+            }
+        ]
     }
 )
