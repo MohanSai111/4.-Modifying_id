@@ -12,6 +12,7 @@ import loggerMiddleware from './src/middlewares/logger.middleware.js';
 import { ApplicationError } from './src/error-handler/applicationError.js';
 import {connectToMongoDB} from './src/config/mongodb.js';
 import orderRouter from './src/features/order/order.routes.js';
+import likeRouter from './src/features/like/like.router.js';
 import { connectUsingMongoose } from './src/config/mongooseConfig.js';
 
 // 2. Create Server
@@ -61,6 +62,7 @@ server.use(
   cartRouter
 );
 server.use('/api/users', userRouter);
+server.use('/api/likes',jwtAuth,likeRouter);
 
 // 3. Default request handler
 server.get('/', (req, res) => {

@@ -1,6 +1,12 @@
 import { ApplicationError } from '../../error-handler/applicationError.js';
 import UserModel from '../user/user.model.js';
 
+import mongoose from "mongoose";
+import { productSchema } from "./product.schema.js";
+
+mongoose.model('Product', productSchema);
+
+
 export default class ProductModel {
   constructor(
     name,
